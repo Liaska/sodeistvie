@@ -170,9 +170,14 @@ h1, h2 {
   align-items: center;
 }
 
-.docs__title {
+.docs__title, .contacts {
   min-height: unset;
 }
+
+.contacts {
+  padding: 50px 0;
+}
+
 
 .docs_title {
   font-size: 45px;
