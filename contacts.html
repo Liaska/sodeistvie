@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Содействие</title>
+    <script
+            type="text/javascript"
+            src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=be18dcba-e3ed-44c3-8a31-7e7e752a8861"
+    ></script>
+    <script src="js/yandexmap.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="style/css/fontawesome.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header_container">
+            <div class="header_logo">
+                <a href="/">СОДЕЙСТВИЕ</a>
+            </div>
+            <nav class="header__nav">
+                <div class="header__nav-link"><a href="">Недвижимость</a></div>
+                <div class="header__nav-link"><a href="">Движимое имущество</a></div>
+                <div class="header__nav-link"><a href="">Бинес</a></div>
+                <div class="header__nav-link"><a href="">Оценка ущерба</a></div>
+                <div class="header__nav-link"><a href="">Судебная экспертиза</a></div>
+                <div class="header__nav-link"><a href="">О компании</a></div>
+                <div class="header__nav-link"><a href="">Контакты</a></div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="main__caption contacts">
+        <div class="container">
+            <div class="contacts__container">
+                <h1 class="contacts__title">Контактные данные</h1>
+            </div>
+        </div>
+    </div>
+    <div class="main__block contacts__info">
+        <div class="container">
+            <div class="contacts__info__container">
+                <div class="contacts__info_call">
+                    <div class="call_data">
+                        <div class="data__phones">
+                            <div class="call_data-title">Телефоны:</div>
+                            <div class="call_data_phone"><a href="tel:+74862763888" class="contact_link"><i class="fa fa-phone" aria-hidden="true"></i>8-(4862)-763-888</a></div>
+                            <div class="call_data_phone"><a href="tel:+79107480889" class="contact_link"><i class="fa fa-phone" aria-hidden="true"></i>8-910-748-08-89</a></div>
+                        </div>
+                        <div class="data__emails">
+                            <div class="call_data-title">E-mail:</div>
+                            <div class="call_data_email"><a href="mailto:fonds@yandex.ru" class="contact_link"><i class="fa fa-envelope-o" aria-hidden="true"></i>fonds@yandex.ru</a></div>
+                        </div>
+
+                        <div class="data__address">
+                            <div class="call_data-title">Адрес офиса:</div>
+                            <div class="call_data_address"><i class="fa fa-map-marker" aria-hidden="true"></i>302028, г.Орел, ул. Брестская, д. 12, пом. 47</div>
+                        </div>
+                    </div>
+                    <div class="call_form">
+                        <form action="" class="contact__us" id="contact__us">
+                            <h2 class="call_form_title">Свяжитесь с нами</h2>
+
+                            <div class="form_input"><input value="" type="text" id="form_NAME" name="NAME" class="form-control required " placeholder="Ваше имя"> <i class="fa fa-user-o"></i></div>
+                            <div class="form_input"><input value="" type="text" id="form_PHONE" name="PHONE" class="form-control required phone" placeholder="Ваш телефон"> <i class="fa fa-phone"></i></div>
+                            <div class="form_input"><textarea rows="3" id="form_MESSAGE" class="form-control " name="MESSAGE" placeholder="Ваше сообщение"></textarea> <i class="fa fa-commenting-o "></i></div>
+                            <p class="call_personal">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contacts__map">
+        <div id="map"></div>
+        <div class="map_info">
+            <div class="map_title">ЗАО «ФОНД «СОДЕЙСТВИЕ»</div>
+            <div class="map_address map__information">Мы расположены по адресу:</div>
+            <div class="map_address-street map__information">Город Орел, улица Брестская, дом 12, помещение 47</div>
+            <div class="map_work map__information">Работает: c 9:00 до 18:00</div>
+            <div class="map_work map__information">С понедельника по пятницу</div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__container">
+            <nav class="footer__nav">
+                <div class="footer__nav-link"><a href="">Недвижимость</a></div>
+                <div class="footer__nav-link"><a href="">Движимое имущество</a></div>
+                <div class="footer__nav-link"><a href="">Бинес</a></div>
+                <div class="footer__nav-link"><a href="">Оценка ущерба</a></div>
+                <div class="footer__nav-link"><a href="">Судебная экспертиза</a></div>
+                <div class="footer__nav-link"><a href="">О компании</a></div>
+                <div class="footer__nav-link"><a href="">Контакты</a></div>
+            </nav>
+            <div class="footer__soc">
+                <ul class="socials" >
+                    <li ><a href="" target="blank" class="vk"></a></li>
+                    <li ><a href="" target="blank" class="facebook" ></a></li>
+                    <li ><a href="" target="blank" class="instagram"></a></li>
+                    <li ><a href="" target="blank" class="whatsapp"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

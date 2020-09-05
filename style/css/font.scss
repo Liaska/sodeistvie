@@ -1,0 +1,33 @@
+@font-face {
+  font-family: $Proxima;
+  src:url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $ProximaB;
+  src: url('../fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $PalatinaB;
+  src: url('../fonts/PalatinoNova-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $Palatina;
+  src: url('../fonts/PalatinoNova-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $Awesome;
+  src: url('../fonts/Awesome.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}

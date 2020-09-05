@@ -1,0 +1,674 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Palatino Nova Bold";
+  src: url("../fonts/PalatinoNova-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Palatino Nova Regular";
+  src: url("../fonts/PalatinoNova-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Awesome Font";
+  src: url("../fonts/Awesome.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Proxima Nova Regular";
+  line-height: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  list-style: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1630px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgba(21, 21, 23, 0.95);
+  color: white;
+  padding: 9px 0;
+}
+
+.header__nav, .footer__nav, .footer__container {
+  display: flex;
+}
+
+.footer__container {
+  justify-content: space-between;
+}
+
+.footer__nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo {
+  font-font: "Proxima Nova Bold";
+  cursor: pointer;
+}
+.header_logo a {
+  color: white;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-family: "Proxima Nova Bold";
+}
+.header_logo a:hover {
+  color: yellow;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-link, .footer__nav-link {
+  cursor: pointer;
+}
+.header__nav-link a, .footer__nav-link a {
+  color: white;
+}
+.header__nav-link a:hover, .footer__nav-link a:hover {
+  color: yellow;
+}
+.header__nav-link:not(:last-of-type), .footer__nav-link:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials li .vk::before {
+  content: "";
+}
+
+.socials li .instagram::before {
+  content: "";
+}
+
+.socials li .facebook::before {
+  content: "";
+}
+
+.socials li .whatsapp::before {
+  content: "";
+}
+
+.socials li a {
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 34px;
+  margin: 7px 0;
+  line-height: 20px;
+  color: white;
+  width: 30px;
+}
+
+.socials li a:hover::before {
+  color: yellow;
+}
+
+.socials li a:before {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Awesome Font";
+  font-size: 20px;
+  color: white;
+  transition: opacity 0.3s;
+}
+
+.footer {
+  background: rgba(21, 21, 23, 0.95);
+  color: white;
+  padding: 9px 0;
+}
+
+.pluses {
+  padding: 15px 0;
+  margin-bottom: 50px;
+}
+
+.pluses__list {
+  display: none;
+  height: 125px;
+}
+
+.pluses_item {
+  width: 33.33333%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pluses_item:not(:last-of-type) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+i {
+  color: black;
+  font-size: 35px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  font-size: 45px;
+  font-family: "Proxima Nova Bold";
+  text-align: center;
+}
+
+.main__caption {
+  padding: 25px 0;
+  min-height: 230px;
+  display: flex;
+  align-items: center;
+}
+
+.docs__title {
+  min-height: unset;
+}
+
+.docs_title {
+  font-size: 45px;
+  font-family: "Proxima Nova Bold";
+  text-align: center;
+}
+
+.docs__type__list {
+  list-style-type: disc;
+}
+
+.docs__type {
+  margin-bottom: 35px;
+}
+
+.docs__type_title, .serts_title {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.docs__type_link {
+  color: black;
+  font-family: "Proxima Nova Regular";
+}
+
+.docs__type_item {
+  list-style-type: disc;
+  padding: 10px;
+}
+.docs__type_item:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.docs__type_item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.text {
+  font-family: "Palatino Nova Regular";
+  text-align: center;
+}
+
+.services_text, .services_title {
+  margin-bottom: 15px;
+}
+
+.services__all {
+  margin: 25px auto 0;
+}
+
+.main__block {
+  min-height: 600px;
+}
+
+.contacts__info {
+  min-height: unset;
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+
+.service_nedvig {
+  background: url("../../images/nedvijimost.jpg") no-repeat 50% 50%/cover;
+}
+
+.partners {
+  background: url("../../images/partners_bg.jpg") no-repeat 50% 50%/cover;
+}
+
+.calculate {
+  background: url("../../images/calculate.jpg") no-repeat 50% 50%/cover;
+}
+
+.choose_us {
+  background: url("../../images/choose.jpg") no-repeat 50% 50%/cover;
+}
+
+.service_bisness {
+  background: url("../../images/biznes.jpg") no-repeat 50% 50%/cover;
+}
+
+.service_car {
+  background: url("../../images/avto.jpg") no-repeat 50% 50%/cover;
+}
+
+.service_bank {
+  background: url("../../images/bank.jpg") no-repeat 50% 50%/cover;
+}
+
+.docs {
+  background: url("../../images/docs.jpg") no-repeat 50% 50%/cover;
+}
+
+.services_item-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.services_item-link:hover:nth-of-type(1) .services_item, .services_item-link:hover:nth-of-type(4) .services_item, .services_item-link:hover:nth-of-type(5) .services_item {
+  background: #000000e0;
+}
+.services_item-link:hover:nth-of-type(1) .services_item .item_title, .services_item-link:hover:nth-of-type(4) .services_item .item_title, .services_item-link:hover:nth-of-type(5) .services_item .item_title {
+  display: none;
+}
+.services_item-link:hover:nth-of-type(1) .services_item .item_title.hidden, .services_item-link:hover:nth-of-type(4) .services_item .item_title.hidden, .services_item-link:hover:nth-of-type(5) .services_item .item_title.hidden {
+  display: block;
+}
+.services_item-link:hover:nth-of-type(1) .services_item .item_info, .services_item-link:hover:nth-of-type(4) .services_item .item_info, .services_item-link:hover:nth-of-type(5) .services_item .item_info {
+  display: block;
+}
+.services_item-link:hover:nth-of-type(1) .services_item *, .services_item-link:hover:nth-of-type(4) .services_item *, .services_item-link:hover:nth-of-type(5) .services_item * {
+  color: white;
+}
+.services_item-link:hover .partners {
+  background: url("../../images/partners.jpg") no-repeat 50% 50%/cover !important;
+}
+.services_item-link:hover .pluses__list {
+  display: flex;
+}
+.services_item-link:hover:nth-of-type(2) .services_item, .services_item-link:hover:nth-of-type(3) .services_item, .services_item-link:hover:nth-of-type(6) .services_item {
+  background: #dddf31e3;
+}
+.services_item-link:hover:nth-of-type(2) .services_item .item_title, .services_item-link:hover:nth-of-type(3) .services_item .item_title, .services_item-link:hover:nth-of-type(6) .services_item .item_title {
+  display: none;
+}
+.services_item-link:hover:nth-of-type(2) .services_item .item_title.hidden, .services_item-link:hover:nth-of-type(3) .services_item .item_title.hidden, .services_item-link:hover:nth-of-type(6) .services_item .item_title.hidden {
+  display: block;
+}
+.services_item-link:hover:nth-of-type(2) .services_item .item_info, .services_item-link:hover:nth-of-type(3) .services_item .item_info, .services_item-link:hover:nth-of-type(6) .services_item .item_info {
+  display: block;
+}
+.services_item-link:hover:nth-of-type(2) .services_item *, .services_item-link:hover:nth-of-type(3) .services_item *, .services_item-link:hover:nth-of-type(6) .services_item * {
+  color: black;
+}
+
+.services_item {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services_item .item_title {
+  font-size: 35px;
+  font-family: "Proxima Nova Bold";
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.services_item .item_title.hidden {
+  display: none;
+}
+.services_item .item_info {
+  display: none;
+  font-size: 22px;
+  font-family: "Palatino Nova Regular";
+  max-width: 80%;
+}
+
+.button {
+  width: 263px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  z-index: 2;
+}
+
+a.animated-button:link:after, a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover, a.animated-button:visited:hover {
+  color: #FFF;
+  text-shadow: none;
+}
+
+span.button-text {
+  transition: 0.6s;
+  font-width: bold;
+}
+
+a.animated-button:hover span.button-text, a.animated-button:hover span.button-text {
+  color: white;
+  transition: 0.6s;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+  height: 450%;
+  z-index: 1;
+}
+
+a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 15px;
+  color: black;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.button-text {
+  position: relative;
+  z-index: 2;
+  color: black;
+}
+
+.main__block-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 345px 345px;
+  justify-content: center;
+  align-items: center;
+}
+
+a.animated-button.victoria-one {
+  border: 2px solid black;
+}
+
+a.animated-button.victoria-one:after {
+  background: black;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+a.animated-button.victoria-two {
+  border: 2px solid black;
+}
+
+a.animated-button.victoria-two:after {
+  background: black;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+a.animated-button.victoria-three {
+  border: 2px solid black;
+}
+
+a.animated-button.victoria-three:after {
+  background: black;
+  opacity: 0.5;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+a.animated-button.victoria-three:hover:after {
+  height: 140%;
+  opacity: 1;
+}
+
+a.animated-button.victoria-four {
+  border: 2px solid black;
+}
+
+a.animated-button.victoria-four:after {
+  background: black;
+  opacity: 0.5;
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+
+a.animated-button.victoria-four:hover:after {
+  opacity: 1;
+  height: 600% !important;
+}
+
+.reviews_info_container {
+  overflow-x: auto;
+  height: 100%;
+}
+
+.reviews__list {
+  display: flex;
+}
+
+.reviews__list:first-of-type .review__item {
+  border-bottom: 2px solid silver;
+}
+
+.review__item {
+  min-width: 25%;
+  padding: 35px 25px;
+}
+.review__item p {
+  font-family: "Palatino Nova Regular";
+}
+
+.review_name {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.data__phones, .data__emails {
+  margin-bottom: 25px;
+}
+
+.call_data-title {
+  margin-bottom: 15px;
+}
+
+.contacts__info_call {
+  display: flex;
+  justify-content: space-between;
+}
+
+.call_data, .call_form {
+  max-width: 48%;
+}
+
+.contact_link, .call_data_address {
+  color: black;
+}
+.contact_link i, .call_data_address i {
+  font-size: 15px;
+  color: black;
+  margin-right: 5px;
+}
+.contact_link:not(:nth-last-of-type), .call_data_address:not(:nth-last-of-type) {
+  margin-bottom: 10px;
+}
+
+.contact_link:hover {
+  text-decoration: underline;
+}
+
+.call_data_phone {
+  display: inline-block;
+}
+.call_data_phone:not(:last-of-type) {
+  margin-right: 25px;
+}
+
+.contacts__map {
+  display: flex;
+  background: black;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#map {
+  width: calc(100% - 450px);
+  height: 600px;
+}
+
+.map_info {
+  max-width: 450px;
+  width: 100%;
+}
+
+.map_title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Proxima Nova Bold";
+  text-align: center;
+}
+
+.map__information {
+  margin-bottom: 15px;
+}
+
+.map_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.map_address-street {
+  font-size: 25px;
+}
+
+.call_form_title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact__us {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  background: #fff;
+  border: 1px solid black;
+  padding: 10px 15px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  top: 0 !important;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important;
+  color: black;
+}
+
+.contact__us input, .contact__us textarea {
+  margin-bottom: 25px;
+}
+
+.form_input {
+  position: relative;
+}
+.form_input i {
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
